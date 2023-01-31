@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color:#000;
+}
+.container {
+    background-image: url('/src/main/img/greenboard.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    overflow: auto;
+    height: 650px;
+    width: 330px;
+    text-align: center;
+    border: solid;
+    border-width: 10px;
+    border-radius:20px;
+    padding: 50px 35px 10px 35px;
+  }
+  label{
+    font-size: 20px;
+  }
+  .btn{
+    margin-top: 120px;
+  }
+  p {
+    width: 200%;
+    background: #f5f9fa;
+    border: 2px solid #eaf2f4;
+    padding: 10px;
+  }
+  
+  .scroll-touch {
+    -webkit-overflow-scrolling: touch; /* Lets it scroll lazy */
+  }
+  
+  .scroll-auto {
+    -webkit-overflow-scrolling: auto; /* Stops scrolling immediately */
+  }
+
+  .button{
+    position:relative;
+    width: 1px;
+    
+  }
+  
+  .button a{
+    color:white;
+    font-family:Helvetica, sans-serif;
+    font-weight:bold;
+    font-size:20px;
+    text-align: center;
+    text-decoration:none;
+    background-color:#FFA12B;
+    position:relative;
+    padding:15px 25px;
+    
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    text-shadow: 0px 1px 0px #000;
+    filter: dropshadow(color=#000, offx=0px, offy=1px);
+    
+    -webkit-box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
+    -moz-box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
+    box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
+    
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+  }
+  
+  .button a:active{
+    top:10px;
+    background-color:#F78900;
+    
+    -webkit-box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #915100;
+    -moz-box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3pxpx 0 #915100;
+    box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #915100;
+  }
+  
+  .button:after{
+    content:"";
+    height:50px;
+    width: 50px;
+    padding:4px;
+    position: absolute;
+    bottom:-15px;
+    left:-4px;
+    z-index:-1;
+    background-color:#2B1800;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+  }

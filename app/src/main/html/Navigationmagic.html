@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Magical Navigation</title>
+	<link rel="stylesheet" type="text/css" href="/src/main/css/menu-nab-bar.css">
+	<link rel="stylesheet" type="text/css" href="/src/main/css/card.css">
+</head>
+<body>
+	<audio controls autoplay hidden>
+		<source src="/src/main/music/bg music.mp3">
+	  </audio>
+	<div class="container">
+		<div class="card-page">
+		<div class="card">
+		  <div class="img">
+			<img src="/src/main/img/SM.png">
+		  </div>
+		  <div class="top-text">
+		  </div>
+		  <div class="bottom-text">
+			<div class="text">	Direction of the Game
+			  djhfa jdfh dsjf hdjfh ajfkhsdjh jhja hdjfhdjfh jh fjdkfhjskdahf jdhfj hdjkfh jdsfh djkhf jkdhf
+			  jfhakjfhkajdhfkdsj hkjf hkjdahfkjdh fkjhsdf jh jkh
+			</div>
+			<div class="btn">
+			  <a href="story-mode.html">PLAY</a>
+			</div>
+		  </div>
+		</div>
+
+		<div class="card">
+		  <div class="img">
+			<img src="/src/main/img/CTD.png">
+		  </div>
+		  <div class="top-text">
+		  </div>
+		  <div class="bottom-text">
+			<div class="text">Direction of the Game</div>
+			<div class="btn">
+			  <a href="/src/main/html/CTD.html">PLAY</a>
+			</div>
+		  </div>
+		</div>
+	
+		<div class="card">
+		  <div class="img">
+			<img src="/src/main/img/GG.png">
+		  </div>
+		  <div class="top-text">
+		  </div>
+		  <div class="bottom-text">
+			<div class="text">Direction of the Game</div>
+			<div class="btn">
+			  <a href="/src/main/html/multiple-c.html">PLAY</a>
+			</div>
+		  </div>
+		</div>
+	
+		<div class="card">
+		  <div class="img">
+			<img src="/src/main/img/mc.png">
+		  </div>
+		  <div class="top-text">
+		  </div>
+		  <div class="bottom-text">
+			<div class="text">Direction of the Game</div>
+			<div class="btn">
+			  <a href="/src/main/html/m-c.html">PLAY</a>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+
+
+
+ <div class="navigation">
+ 	<ul>
+ 		<li class="list" id="one">
+ 			<a href="#">
+ 				<span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+ 				<span class="text ">home</span>
+ 			</a>
+ 		</li>
+ 		<li class="list" id="two">
+ 			<a href="#">
+ 				<span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+ 				<span class="text">Profile</span>
+ 			</a>
+ 		</li>
+ 		<li class="list active" id="three">
+ 			<a href="#">
+ 				<span class="icon"><ion-icon name="chatbubble-outline"></ion-icon></span>
+ 				<span class="text">Messages</span>
+ 			</a>
+ 		</li>
+ 		<li class="list" id="four">
+ 			<a href="#">
+ 				<span class="icon"><ion-icon name="image-outline"></ion-icon></span>
+ 				<span class="text">Photos</span>
+ 			</a>
+ 		</li>
+ 		<li class="list" id="five">
+ 			<a href="#">
+ 				<span class="icon"><ion-icon name="settings-outline"></ion-icon></span>
+ 				<span class="text">Setting</span>
+ 			</a>
+ 		</li>
+ 		<div class="indicator"></div>
+ 	</ul>
+ </div>
+ <script type="text/javascript">
+ 	const list = document.querySelectorAll('.list');
+ 	function activelink(){
+     list.forEach((item)=> 
+     	item.classList.remove('active'));
+     this.classList.add('active');
+
+ 	}
+    list.forEach((item)=> 
+    	item.addEventListener('click', activelink));
+
+ </script>
+ <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
